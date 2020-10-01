@@ -1,10 +1,9 @@
-Feature: As a potential client i want to interact with the mobile application
+Feature:Como cliente empresa no activo quiero que se muestre una Pantalla Inicial Bienvenido Para que pueda registrarme en la aplicación con mis contraseñas
 
-  Scenario Outline: The user starts the application, registers a new user, changes the language, log out of the app and log in to the app.
-    Given The app is loaded correctly
-    When The user goes to the Sign Up page
-    And The user registers a new user with: <username>, <email>, <password>
-    Then Home page is displayed
+  Scenario Outline: Mostrar el carrusel de novedades si hay novedades y seguir el flujo deseo Activarme
+    Given La app se cargo correctamente
+    When Hago click en el botón Ingresar
+    Then Se visualiza la Pantalla Inicial de Bienvenida
 
     When The user changes the language
     And The user log out of the app
